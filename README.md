@@ -25,7 +25,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The key to what Shawarma provides is a pattern of how to right Ruby classes
+that can be easily adapted to run on AWS Lambda. The key is that Shawarma is
+intended to provide the development framework/pattern and a deployment
+mechanism that can be used either as an end-to-end solution, or as a packager
+that is integrated into your own deployment toolchain.
+
+The goal is that if you write a class like the one below, Shawarma will be
+able to package and deploy that class for execution on AWS Lambda:
+
+```ruby
+class HelloLambda
+  include Shawarma::Function
+
+  def perform
+    logger.log "received : #{request.name}"
+    "Hello, #{request.name}"
+  end
+end
+```
+
+**TODO: Explain how this works, restrictions, etc.**
 
 ## Development
 
