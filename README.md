@@ -1,6 +1,7 @@
 # Shawarma
 
 [![Gem Version](https://badge.fury.io/rb/shawarma.svg)](https://badge.fury.io/rb/shawarma)
+[![Build Status](https://travis-ci.org/plainprogrammer/shawarma.svg?branch=master)](https://travis-ci.org/plainprogrammer/shawarma)
 
 Shawarma is a convenience gem for producing Ruby applications that can run on
 the Amazon Web Services (AWS) Lambda platform. It relies on AWS Lambda's native
