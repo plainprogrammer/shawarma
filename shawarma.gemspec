@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = 'shawarma'
   spec.version       = Shawarma::VERSION
   spec.authors       = ['James Thompson']
-  spec.email         = %q{james@mavenlink.com}
+  spec.email         = %q{jwthompson2@gmail.com}
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = %q{TODO: Put your gem's website or public repo URL here.}
+  spec.summary       = %q{An easy way to get Ruby onto AWS Lambda}
+  spec.description   = %q{A convenience gem for building and deploying Ruby to AWS Lambda}
+  spec.homepage      = %q{https://github.com/plainprogrammer/shawarma}
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
